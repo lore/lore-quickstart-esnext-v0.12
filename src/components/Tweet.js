@@ -8,7 +8,7 @@ import DeleteLink from './DeleteLink';
 
   return {
     user: getState('user.byId', {
-      id: tweet.data.userId
+      id: tweet.data.user
     })
   };
 })
