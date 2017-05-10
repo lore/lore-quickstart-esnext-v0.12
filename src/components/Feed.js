@@ -8,7 +8,8 @@ import LoadMoreButton from './LoadMoreButton';
   return {
     tweets: getState('tweet.find', {
       pagination: {
-        page: props.location.query.page || '1'
+        page: props.location.query.page || '1',
+        populate: 'user'
       }
     })
   }
